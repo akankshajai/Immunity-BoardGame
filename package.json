@@ -1,0 +1,24 @@
+{
+  "name": "immunity-boardgame",
+  "version": "1.0.0",
+  "description": "A Turn Based Board Game",
+  "main": "world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akanksha Jai",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-babel": "^8.0.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jshint": "^2.10.2",
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.0",
+    "run-sequence": "^2.2.1"
+  }
+}

@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Fondamento&display=swap");
+
+body {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.startContainer {
+  color: white;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: "Fondamento", cursive;
+  font-size: 21px;
+}
+.startContainer button {
+  position: absolute;
+  left: 24em;
+  padding: 1rem 1.5rem;
+  border-radius: 1em;
+  border-style: double;
+  font-family: "Fondamento", cursive;
+  font-size: larger;
+  color: black;
+}
+.startContainer button a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  margin: 1rem 2rem;
+  padding: 0.5rem;
+}
+
+h1 {
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.board {
+  width: 60%;
+  max-width: 100%;
+  padding: 1em 2em;
+  margin: 0.5em 1em;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 70px);
+  grid-template-rows: repeat(10, 70px);
+  justify-content: center;
+  /* border: 1.5px inset black;*/
+}
+.grid-cell {
+  background-color: white;
+  border: 1px groove #f8f5f342;
+}
+
+.wall {
+  background-color: black;
+}
+#flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.boardplayer1 {
+  width: 100%;
+  background-image: url("./images/man.png");
+  background-repeat: no-repeat;
+}
+.boardplayer2 {
+  width: 100%;
+  background-image: url("./images/avatar.png");
+  background-repeat: no-repeat;
+}
+.playerStore {
+  display: flex;
+  text-align: center;
+  width: 40%;
+  max-width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-family: "Fondamento", cursive;
+  font-variant-caps: petite-caps;
+}
+.activeTurn {
+  box-sizing: border-box;
+  border-style: outset;
+  height: 12%;
+}
+.activeTurn h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.playerStore p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-variant-caps: titling-caps;
+}
+.player1,
+.player2 {
+  max-width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  width: 20%;
+  margin: 1rem 3rem;
+}
+.weapon {
+  background-color: white;
+  border: 1px inset #79554842;
+  background-repeat: no-repeat;
+}
+.weapon1 {
+  background-image: url("./images/sword.png");
+}
+.weapon2 {
+  background-image: url("./images/utensil.png");
+}
+.weapon3 {
+  background-image: url("./images/animals.png");
+}
+.weapon4 {
+  background-image: url("./images/bomb.png");
+}
+.defaultWeapon {
+  background-image: url("./images/hammer.png");
+}
+#weaponStyle {
+  width: 70px;
+  height: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+}
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.91);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: "Fondamento", cursive;
+}
+
+.playerSection {
+  display: inline-flex;
+}
+.playerattack,
+.playerdefend {
+  margin-right: 0.5rem;
+  /*padding: 0.4rem;*/
+}

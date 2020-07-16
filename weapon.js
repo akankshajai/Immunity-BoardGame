@@ -11,3 +11,4 @@ export class Weapon {
     let randomPlace = Math.floor(Math.random() * availableCellCount);
     $(".grid-cell:eq(" + randomPlace + ")").addClass(this.avatarClass);
   }
+}

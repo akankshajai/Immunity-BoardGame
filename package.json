@@ -4,21 +4,25 @@
   "description": "A Turn Based Board Game",
   "main": "world.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lserver -f index.html"
   },
   "author": "Akanksha Jai",
   "license": "ISC",
   "dependencies": {
     "gulp-babel": "^8.0.0",
-    "gulp-jshint": "^2.1.0",
     "gulp-uglify": "^3.0.2",
-    "jshint": "^2.10.2",
     "http-server": "^0.12.3"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sequence": "^1.0.0",
+    "jshint": "^2.11.1",
     "run-sequence": "^2.2.1"
   }
 }

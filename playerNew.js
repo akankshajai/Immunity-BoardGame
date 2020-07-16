@@ -388,14 +388,16 @@ export class Player {
       console.log(a);
       //if destination has a weapon,pick it up.
       if (a.contains("weapon")) {
+        var defaultGridWeapon;
         let weaponClass = a.value;
         console.log(weaponClass);
         if (defaultWeaponClassName1.startsWith("grid-cell")) {
-          var defaultGridWeapon = defaultWeaponClassName1;
+          defaultGridWeapon = defaultWeaponClassName1;
         } else {
           defaultGridWeapon = "grid-cell" + " " + defaultWeaponClassName1;
         }
         playerClassList.removeClass(weaponClass);
+        //if(localStorage[`${this.name}`] !== undefined)
         this.storeWeapon(defaultGridWeapon);
         callback(weaponClass, weaponsObjVal, playerContainer);
         //if destination has any player, can't move.

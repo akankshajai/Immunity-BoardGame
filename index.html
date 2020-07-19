@@ -6,28 +6,87 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Immunity Board Game</title>
   </head>
-  <body style="background: #000000b3;">
+  <body style="background: linear-gradient(90deg, #795548ad, transparent);">
     <div class="startContainer">
       <h1>Immunity Board Game</h1>
-      <h2>Rules to play this game are as follows:-</h2>
-      <ul style="list-style-type: square;">
-        <li>Each player can move 3 spaces horizontally or vertically.</li>
-        <li>
-          Each player can earn their strength by collecting different weapons.
-        </li>
-        <li>Default Weapon for each player is hammer, which has 10 points.</li>
-        <li>
-          Choose the weapon with strongest value as your strength is directly
-          proportional to your opponent's damage.
-        </li>
-        <li>
-          After getting ready for fight(by collecting weapons), you can choose
-          attack or defend.
-        </li>
-        <li>Try your luck to win!!</li>
-      </ul>
-
-      <button type="button"><a href="./game.html">Start Game</a></button>
+      <div class="container-fluid avatarRule">
+        <div class="ruleContainer">
+          <h2>Rules to play this game are as follows:-</h2>
+          <ul style="list-style-type: square;">
+            <li>Each player can move 3 spaces horizontally or vertically.</li>
+            <li>
+              Each player can earn their strength by collecting different
+              weapons.
+            </li>
+            <li>
+              Default Weapon for each player is hammer, which has 10 points.
+            </li>
+            <li>
+              Choose the weapon with strongest value as your strength is
+              directly proportional to your opponent's damage.
+            </li>
+            <li>
+              After getting ready for fight(by collecting weapons), you can
+              choose attack or defend.
+            </li>
+            <li>Try your luck to win!!</li>
+          </ul>
+          <button type="button"><a href="./game.html">Start Game</a></button>
+        </div>
+        <div class="playerAvatar">
+          <figure class="figure">
+            <img
+              src="./images/avatar.png"
+              class="figure-img img-fluid rounded"
+            />
+            <figcaption class="figure-caption">
+              Player 1 with power 10
+            </figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="./images/man.png" class="figure-img img-fluid rounded" />
+            <figcaption class="figure-caption">
+              Player 2 with power 10
+            </figcaption>
+          </figure>
+        </div>
+        <div class="avatarContainer">
+          <figure class="figure">
+            <img
+              src="./images/sword.png"
+              class="figure-img img-fluid rounded"
+            />
+            <figcaption class="figure-caption">Sword with power 60</figcaption>
+          </figure>
+          <figure class="figure">
+            <img
+              src="./images/utensil.png"
+              class="figure-img img-fluid rounded"
+            />
+            <figcaption class="figure-caption">
+              Utensil with power 50
+            </figcaption>
+          </figure>
+          <figure class="figure">
+            <img
+              src="./images/animals.png"
+              class="figure-img img-fluid rounded"
+            />
+            <figcaption class="figure-caption">Animal with power 40</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="./images/bomb.png" class="figure-img img-fluid rounded" />
+            <figcaption class="figure-caption">Bomb with power 30</figcaption>
+          </figure>
+          <figure class="figure">
+            <img
+              src="./images/hammer.png"
+              class="figure-img img-fluid rounded"
+            />
+            <figcaption class="figure-caption">Hammer with power 10</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
     <script src="./node_modules/babel-polyfill/browser.js"></script>
   </body>

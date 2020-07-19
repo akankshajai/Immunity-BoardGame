@@ -388,17 +388,17 @@ export class Player {
       console.log(a);
       //if destination has a weapon,pick it up.
       if (a.contains("weapon")) {
-        var defaultGridWeapon;
+        //var defaultGridWeapon;
+
         let weaponClass = a.value;
         console.log(weaponClass);
-        if (defaultWeaponClassName1.startsWith("grid-cell")) {
-          defaultGridWeapon = defaultWeaponClassName1;
-        } else {
-          defaultGridWeapon = "grid-cell" + " " + defaultWeaponClassName1;
-        }
         playerClassList.removeClass(weaponClass);
-        //if(localStorage[`${this.name}`] !== undefined)
-        this.storeWeapon(defaultGridWeapon);
+        if (defaultWeaponClassName1.startsWith("grid-cell")) {
+          this.storeWeapon(defaultWeaponClassName1);
+        } else {
+          this.storeWeapon("grid-cell" + " " + defaultWeaponClassName1);
+        }
+
         callback(weaponClass, weaponsObjVal, playerContainer);
         //if destination has any player, can't move.
       } else if (a.contains("boardplayer1") || a.contains("boardplayer2")) {
@@ -418,6 +418,7 @@ export class Player {
   }
   //store weapon value in localStorage.
   storeWeapon(valueWeapon) {
+    console.log(valueWeapon);
     localStorage.setItem(`${this.name}`, valueWeapon);
   }
   //update Weapon value in instance and in player container.

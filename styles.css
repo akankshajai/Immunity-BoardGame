@@ -8,7 +8,7 @@ body {
 }
 
 .startContainer {
-  color: white;
+  color: #181717;
   word-spacing: 2px;
   letter-spacing: 1px;
   font-family: "Fondamento", cursive;
@@ -16,17 +16,16 @@ body {
 }
 .startContainer button {
   position: absolute;
-  left: 24em;
-  padding: 1rem 1.5rem;
-  border-radius: 1em;
+  left: 5em;
+  padding: 0.5rem 2rem;
   border-style: double;
   font-family: "Fondamento", cursive;
-  font-size: larger;
-  color: black;
+  font-size: 22px;
+  background-color: black;
 }
 .startContainer button a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 ul li {
@@ -35,8 +34,8 @@ ul li {
 }
 
 h1 {
-  margin: 2rem;
-  padding: 1rem;
+  margin: 1rem;
+  padding: 0.2rem;
   text-align: center;
 }
 .board {
@@ -55,10 +54,12 @@ h1 {
 .grid-cell {
   background-color: white;
   border: 1px groove #f8f5f342;
+  border-radius: 6px;
 }
 
 .wall {
   background-color: black;
+  border-radius: 6px;
 }
 #flex-container {
   display: flex;
@@ -89,6 +90,7 @@ h1 {
   box-sizing: border-box;
   border-style: outset;
   height: 12%;
+  border-color: #863213;
 }
 .activeTurn h2 {
   margin-top: 1rem;
@@ -111,7 +113,7 @@ h1 {
   margin: 1rem 3rem;
 }
 .weapon {
-  background-color: white;
+  /* background-color: white;*/
   border: 1px inset #79554842;
   background-repeat: no-repeat;
 }
@@ -169,4 +171,20 @@ h1 {
 .playerdefend {
   margin-right: 0.5rem;
   /*padding: 0.4rem;*/
+}
+.avatarRule {
+  display: flex;
+}
+.ruleContainer {
+  width: 50%;
+}
+.avatarContainer {
+  width: 25%;
+  margin-top: 1rem;
+  margin-bottom: auto;
+}
+.playerAvatar {
+  width: 25%;
+  margin-top: 5rem;
+  margin-bottom: auto;
 }
